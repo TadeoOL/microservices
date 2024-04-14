@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KijbEQZ9vStsHaWHJWEQ0hLrfNLzdAgqFD3JqbzP6Uw=",
+  "Source": "Auth.Microservice",
+  "BasePath": "_content/Auth.Microservice",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
