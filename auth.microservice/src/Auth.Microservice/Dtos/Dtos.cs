@@ -11,3 +11,7 @@ public record AuthUserDto(
     DateTimeOffset CreatedAt,
     DateTimeOffset UpdatedAt
 );
+
+public record CreateUserDto(Guid Id, DateTimeOffset CreatedAt, DateTimeOffset UpdatedAt);
+
+public record UserDto(Guid Id, string Name, string LastName);

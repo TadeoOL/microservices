@@ -1,3 +1,4 @@
+using Auth.Microservice.Clients;
 using Auth.Microservice.Dtos;
 using Auth.Microservice.Entities;
 using Common;
@@ -10,10 +11,12 @@ namespace Auth.Microservice.Controllers;
 public class AuthUsersController : ControllerBase
 {
     private readonly IRepository<AuthUser> authUser;
+    private readonly UserClient userClient;
 
-    public AuthUsersController(IRepository<AuthUser> authUser)
+    public AuthUsersController(IRepository<AuthUser> authUser, UserClient userClient)
     {
         this.authUser = authUser;
+        this.userClient = userClient;
     }
 
     [HttpGet]
@@ -42,8 +45,11 @@ public class AuthUsersController : ControllerBase
         {
             throw new Exception("Ya existe un usuario registrado con este correo!");
         }
+        var userId = Guid.NewGuid();
+        var userUp = await userClient.GetUsersAsync(userId);
         var newUser = new AuthUser
         {
+            UserId = userId,
             Email = createUserAuthDto.Email,
             Password = createUserAuthDto.Password,
             CreatedAt = DateTimeOffset.UtcNow,

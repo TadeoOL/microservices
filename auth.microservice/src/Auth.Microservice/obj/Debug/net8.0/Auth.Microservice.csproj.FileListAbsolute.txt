@@ -46,3 +46,7 @@ C:\Users\Tadeo\Documents\RepoGit\microservices\auth.microservice\src\Auth.Micros
 C:\Users\Tadeo\Documents\RepoGit\microservices\auth.microservice\src\Auth.Microservice\obj\Debug\net8.0\Auth.Microservice.pdb
 C:\Users\Tadeo\Documents\RepoGit\microservices\auth.microservice\src\Auth.Microservice\obj\Debug\net8.0\Auth.Microservice.genruntimeconfig.cache
 C:\Users\Tadeo\Documents\RepoGit\microservices\auth.microservice\src\Auth.Microservice\obj\Debug\net8.0\ref\Auth.Microservice.dll
+C:\Users\Tadeo\Documents\RepoGit\microservices\auth.microservice\src\Auth.Microservice\obj\Debug\net8.0\Auth.Microservice.sourcelink.json
+C:\Users\Tadeo\Documents\RepoGit\microservices\auth.microservice\src\Auth.Microservice\bin\Debug\net8.0\Microsoft.Extensions.Http.Polly.dll
+C:\Users\Tadeo\Documents\RepoGit\microservices\auth.microservice\src\Auth.Microservice\bin\Debug\net8.0\Polly.dll
+C:\Users\Tadeo\Documents\RepoGit\microservices\auth.microservice\src\Auth.Microservice\bin\Debug\net8.0\Polly.Extensions.Http.dll
