@@ -1,5 +1,7 @@
+using Common.MassTransit;
 using Common.MongoDB;
 using Common.Settings;
+using MassTransit;
 using Microsoft.OpenApi.Models;
 using Users.Microservice.Entities;
 
@@ -9,7 +11,7 @@ var serviceSettings = builder
     .Configuration.GetSection(nameof(ServiceSettings))
     .Get<ServiceSettings>()!;
 
-builder.Services.AddMongo().AddMongoRepository<User>("users");
+builder.Services.AddMongo().AddMongoRepository<UserClass>("users").AddMassTransitWithRabbitMq();
 
 builder.Services.AddControllers(options =>
 {
@@ -35,8 +37,9 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers(); // Agregar enrutamiento para controladores
+app.MapControllers();
 
 app.Run();

@@ -1,5 +1,7 @@
 using Common;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
+using User.Microservice.Contracts;
 using Users.Microservice.Dtos;
 using Users.Microservice.Entities;
 
@@ -9,11 +11,13 @@ namespace Users.Microservice.Controllers;
 [Route("users")]
 public class UsersController : ControllerBase
 {
-    private readonly IRepository<User> usersRepository;
+    private readonly IRepository<UserClass> usersRepository;
+    private readonly IPublishEndpoint publishEndpoint;
 
-    public UsersController(IRepository<User> usersRepository)
+    public UsersController(IRepository<UserClass> usersRepository, IPublishEndpoint publishEndpoint)
     {
         this.usersRepository = usersRepository;
+        this.publishEndpoint = publishEndpoint;
     }
 
     [HttpGet]
@@ -35,7 +39,7 @@ public class UsersController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<UserDto>> PostAsync(UserDto userDto)
     {
-        var user = new User()
+        var user = new UserClass()
         {
             Name = userDto.Name,
             LastName = userDto.LastName,
@@ -44,6 +48,16 @@ public class UsersController : ControllerBase
             UpdatedAt = DateTimeOffset.UtcNow
         };
         await usersRepository.CreateAsync(user);
+        await publishEndpoint.Publish(
+            new UserCreated(
+                user.Id,
+                user.Name,
+                user.LastName,
+                user.BirthDay,
+                user.CreatedAt,
+                user.UpdatedAt
+            )
+        );
         return CreatedAtAction(nameof(GetByIdAsync), new { id = user.Id }, user);
     }
 
@@ -58,6 +72,16 @@ public class UsersController : ControllerBase
         user.BirthDay = userDto.BirthDay;
         user.UpdatedAt = DateTimeOffset.UtcNow;
         await usersRepository.UpdateAsync(user);
+        await publishEndpoint.Publish(
+            new UserUpdated(
+                user.Id,
+                user.Name,
+                user.LastName,
+                user.BirthDay,
+                user.CreatedAt,
+                user.UpdatedAt
+            )
+        );
         return NoContent();
     }
 
@@ -68,6 +92,7 @@ public class UsersController : ControllerBase
         if (user == null)
             return NotFound();
         await usersRepository.RemoveAsync(user.Id);
+        await publishEndpoint.Publish(new UserDeleted(user.Id));
         return NoContent();
     }
 }

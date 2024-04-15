@@ -5,7 +5,7 @@ namespace Users.Microservice;
 
 public static class Extensions
 {
-    public static UserDto AsDto(this User user)
+    public static UserDto AsDto(this UserClass user)
     {
         return new UserDto(
             user.Id,

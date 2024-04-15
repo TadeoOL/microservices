@@ -10,3 +10,4 @@ C:\Users\Tadeo\Documents\RepoGit\microservices\common\src\Common\obj\Release\net
 C:\Users\Tadeo\Documents\RepoGit\microservices\common\src\Common\obj\Release\net8.0\refint\Common.dll
 C:\Users\Tadeo\Documents\RepoGit\microservices\common\src\Common\obj\Release\net8.0\Common.pdb
 C:\Users\Tadeo\Documents\RepoGit\microservices\common\src\Common\obj\Release\net8.0\ref\Common.dll
+C:\Users\Tadeo\Documents\RepoGit\microservices\common\src\Common\obj\Release\net8.0\Common.sourcelink.json

@@ -2,7 +2,7 @@ using Common;
 
 namespace Users.Microservice.Entities;
 
-public class User : IEntity
+public class UserClass : IEntity
 {
     public Guid Id { get; set; }
     public string? Name { get; set; }

@@ -47,3 +47,11 @@ C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Micr
 C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\Common.dll
 C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
 c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\obj\Debug\net8.0\Users.Microservice.sourcelink.json
+c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\MassTransit.dll
+c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\MassTransit.Abstractions.dll
+c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\MassTransit.AspNetCoreIntegration.dll
+c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\RabbitMQ.Client.dll
+c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\User.Microservice.Contracts.dll
+c:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\Users.Microservice\bin\Debug\net8.0\User.Microservice.Contracts.pdb

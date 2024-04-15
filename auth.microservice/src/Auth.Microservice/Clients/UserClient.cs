@@ -1,5 +1,4 @@
 using Auth.Microservice.Dtos;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Auth.Microservice.Clients;
 

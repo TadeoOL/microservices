@@ -1,0 +1,12 @@
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\bin\Debug\net8.0\User.Microservice.Contracts.deps.json
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\bin\Debug\net8.0\User.Microservice.Contracts.dll
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\bin\Debug\net8.0\User.Microservice.Contracts.pdb
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\User.Microservice.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\User.Microservice.Contracts.AssemblyInfoInputs.cache
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\User.Microservice.Contracts.AssemblyInfo.cs
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\User.Microservice.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\User.Microservice.Contracts.sourcelink.json
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\User.Microservice.Contracts.dll
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\refint\User.Microservice.Contracts.dll
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\User.Microservice.Contracts.pdb
+C:\Users\Tadeo\Documents\RepoGit\microservices\users.microservice\src\User.Microservice.Contracts\obj\Debug\net8.0\ref\User.Microservice.Contracts.dll
